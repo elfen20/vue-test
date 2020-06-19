@@ -1,10 +1,12 @@
-var app = new Vue({
+Vue.use(httpVueLoader);
+
+new Vue({
     el: '#vue-app',
     components: {
-        'my-component': httpVueLoader('my-component.vue')
+        'my-component': 'url:my-component.vue',
     },
     data: {
         title: 'Test 02',
-        message: 'Load the component:'
+        message: 'Load the component:',
     }
 });
