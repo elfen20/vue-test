@@ -12,3 +12,4 @@ Debugger for Firefox
 jshint
 Live Server (ritwickdey.LiveServer)
 Markdown Preview Github Style
+Vetur Vue Tooling (@id:octref.vetur)
