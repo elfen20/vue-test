@@ -3,6 +3,7 @@ Vue.use(httpVueLoader);
 var vm = new Vue({
     el: '#vue-app',
     components: {
+        'box-artist': 'url:box-artist.vue',
         'my-component': 'url:my-component.vue',
     },
     data: {

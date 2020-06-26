@@ -11,7 +11,7 @@ module.exports = {
     data: function() {
         return {
             who: 'world',
-            artists: vm.data.artists,
+          //  artists: vm.data.artists,
         }
     }
 }
