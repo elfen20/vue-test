@@ -1,15 +1,19 @@
 <template>
-    <div>
-        <p class="box-artist"> {{ artist }} </p>
-    </div>
+    <li>
+        {{ artist }}
+    </li>
 </template>
 
 <script>
 module.exports = {
-    data: function () {
-        return {
-            artist: '- - -',
-        }
+    data: function() {
+        return {}
+    },
+    props: {
+        artist: {
+            type: String,
+            required: true,
+        },
     }
 }
 </script>

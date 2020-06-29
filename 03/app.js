@@ -3,13 +3,19 @@ Vue.use(httpVueLoader);
 var vm = new Vue({
     el: '#vue-app',
     components: {
-        'box-artist': 'url:box-artist.vue',
-        'my-component': 'url:my-component.vue',
+        'artist-list': 'url:artist-list.vue',
     },
     data: {
         title: 'Test 03',
         data: {},
+        alist: ["A", "B", "C"],
         message: 'Loading...',
+    },
+    methods: {
+        press: function() {
+            console.log("Press");
+           this.alist = this.data.artists;
+        }
     },
     created: function() {
         fetch('../assets/data/m.json')
